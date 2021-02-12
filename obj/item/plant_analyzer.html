@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;obj&#x2F;item&#x2F;plant_analyzer - &#x2F;tg&#x2F; Station 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">&#x2F;tg&#x2F; Station 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="obj/item/plant_analyzer.html#proc">Proc Details</a></header>
+<main>
+<h1>plant_analyzer <aside>/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/plant_analyzer.html">plant_analyzer</a></aside>
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/dde88c87bb3e5c7817262eeed3e34438f4e25b87/code/modules/hydroponics/hydroitemdefines.dm#L3">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;hydroponics&#x2F;hydroitemdefines.dm 3"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="obj/item/plant_analyzer.html#proc/get_analyzer_text_chem_contents">get_analyzer_text_chem_contents</a></th><td>This proc is formats the chemical CONTENTS of a plant into a message.</td></tr>
+            <tr><th><a href="obj/item/plant_analyzer.html#proc/get_analyzer_text_chem_genes">get_analyzer_text_chem_genes</a></th><td>This proc is formats the chemical GENES of a seed into a message.</td></tr>
+            <tr><th><a href="obj/item/plant_analyzer.html#proc/get_analyzer_text_traits">get_analyzer_text_traits</a></th><td>This proc is formats the traits and stats of a seed into a message.</td></tr>
+            <tr><th><a href="obj/item/plant_analyzer.html#proc/get_graft_text">get_graft_text</a></th><td>This proc is formats the scan of a graft of a seed into a message.</td></tr>
+            <tr><th><a href="obj/item/plant_analyzer.html#proc/scan_plant">scan_plant</a></th><td>This proc is called when a seed or any grown plant is scanned.
+It formats the plant name as well as either its traits or its chemical contents.</td></tr>
+            <tr><th><a href="obj/item/plant_analyzer.html#proc/scan_tray">scan_tray</a></th><td>This proc is called when we scan a hydroponics tray or soil.
+It formats the plant name, it's age, the plant's stats, and the tray's stats.</td></tr></table><h2 id="proc">Proc Details</h2><h3 id="proc/get_analyzer_text_chem_contents"><aside class="declaration">proc </aside>get_analyzer_text_chem_contents<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/scanned_plant) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/dde88c87bb3e5c7817262eeed3e34438f4e25b87/code/modules/hydroponics/hydroitemdefines.dm#L171">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;hydroponics&#x2F;hydroitemdefines.dm 171"/></a></aside>
+        </h3>
+        <p>This proc is formats the chemical CONTENTS of a plant into a message.</p>
+<ul>
+<li>scanned_plant - the source plant we are reading out its reagents contents.</li>
+</ul>
+<p>Returns the formatted output as text.</p><h3 id="proc/get_analyzer_text_chem_genes"><aside class="declaration">proc </aside>get_analyzer_text_chem_genes<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/seeds.html">seeds</a>/scanned) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/dde88c87bb3e5c7817262eeed3e34438f4e25b87/code/modules/hydroponics/hydroitemdefines.dm#L155">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;hydroponics&#x2F;hydroitemdefines.dm 155"/></a></aside>
+        </h3>
+        <p>This proc is formats the chemical GENES of a seed into a message.</p>
+<ul>
+<li>scanned - the source seed for what we are scanning for chemical genes.</li>
+</ul>
+<p>Returns the formatted output as text.</p><h3 id="proc/get_analyzer_text_traits"><aside class="declaration">proc </aside>get_analyzer_text_traits<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/seeds.html">seeds</a>/scanned) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/dde88c87bb3e5c7817262eeed3e34438f4e25b87/code/modules/hydroponics/hydroitemdefines.dm#L106">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;hydroponics&#x2F;hydroitemdefines.dm 106"/></a></aside>
+        </h3>
+        <p>This proc is formats the traits and stats of a seed into a message.</p>
+<ul>
+<li>scanned - the source seed for what we are scanning for traits.</li>
+</ul>
+<p>Returns the formatted output as text.</p><h3 id="proc/get_graft_text"><aside class="declaration">proc </aside>get_graft_text<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/graft.html">graft</a>/scanned_graft) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/dde88c87bb3e5c7817262eeed3e34438f4e25b87/code/modules/hydroponics/hydroitemdefines.dm#L198">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;hydroponics&#x2F;hydroitemdefines.dm 198"/></a></aside>
+        </h3>
+        <p>This proc is formats the scan of a graft of a seed into a message.</p>
+<ul>
+<li>scanned_graft - the graft for what we are scanning.</li>
+</ul>
+<p>Returns the formatted output as text.</p><h3 id="proc/scan_plant"><aside class="declaration">proc </aside>scan_plant<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/scanned_object) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/dde88c87bb3e5c7817262eeed3e34438f4e25b87/code/modules/hydroponics/hydroitemdefines.dm#L75">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;hydroponics&#x2F;hydroitemdefines.dm 75"/></a></aside>
+        </h3>
+        <p>This proc is called when a seed or any grown plant is scanned.
+It formats the plant name as well as either its traits or its chemical contents.</p>
+<ul>
+<li>scanned_object - the source objecte for what we are scanning. This can be a grown food, a grown inedible, or a seed.</li>
+</ul>
+<p>Returns the formatted output as text.</p><h3 id="proc/scan_tray"><aside class="declaration">proc </aside>scan_tray<aside>(/<a href="obj.html">obj</a>/<a href="obj/machinery.html">machinery</a>/<a href="obj/machinery/hydroponics.html">hydroponics</a>/scanned_tray) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/dde88c87bb3e5c7817262eeed3e34438f4e25b87/code/modules/hydroponics/hydroitemdefines.dm#L47">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;hydroponics&#x2F;hydroitemdefines.dm 47"/></a></aside>
+        </h3>
+        <p>This proc is called when we scan a hydroponics tray or soil.
+It formats the plant name, it's age, the plant's stats, and the tray's stats.</p>
+<ul>
+<li>scanned_tray - the tray or soil we are scanning.</li>
+</ul>
+<p>Returns the formatted message as text.</p></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/Skyrat-SS13/Skyrat-tg/tree/dde88c87bb3e5c7817262eeed3e34438f4e25b87">dde88c8</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.3.0</a></footer>
+</body>
+</html>
